@@ -40,6 +40,7 @@ th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--border);ve
 th{font-family:Poppins,sans-serif;font-weight:600;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface-2)}
 tr:last-child td{border-bottom:0}
 td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+td ul{margin:0;padding-left:1.1rem}
 .note{padding:14px 18px;border-radius:14px;background:var(--green-soft);color:var(--ink);border:1px solid color-mix(in srgb,var(--green) 25%,transparent);font-size:.95rem}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
 </style>
@@ -48,13 +49,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
 <div class="wrap">
   <div class="brand"><div class="mark">MN</div><b>MummaNest</b></div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 3 September 2026 · Applies to the MummaNest app for iOS and Android</p>
+  <p class="meta">Effective 14 September 2026 · Applies to the MummaNest app for iOS and Android</p>
 
   <div class="summary">
     <h2>The short version</h2>
     <ul>
       <li>MummaNest is a support companion for mothers. We collect what you choose to share so the app can personalise guidance, run Anna (the AI companion), and connect you with other moms.</li>
       <li>You decide what we may use, purpose by purpose, and you can withdraw any consent at any time in <em>Privacy &amp; consents</em>.</li>
+      <li>Anna's replies, and the safety checks on community posts and messages, are powered by OpenAI. Nothing is sent to OpenAI until the app has told you about it and you have agreed. See <a href="#anna">section 4</a>.</li>
       <li>We never sell your data and we show no advertising. There are no advertising or analytics trackers in the app.</li>
       <li>Sensitive details are encrypted field by field on servers in India. Your diary is private to you.</li>
       <li>You can request a copy of your data and delete your account from inside the app. Deletion completes after a 30-day grace period you can cancel.</li>
@@ -67,7 +69,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
       <li><a href="#who">Who we are</a></li>
       <li><a href="#collect">What we collect</a></li>
       <li><a href="#use">How we use it</a></li>
-      <li><a href="#anna">Anna, the AI companion</a></li>
+      <li><a href="#anna">Anna, safety checks and our AI provider</a></li>
       <li><a href="#village">Community, matching and messaging</a></li>
       <li><a href="#share">Who we share data with</a></li>
       <li><a href="#where">Where your data lives</a></li>
@@ -83,7 +85,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
 
   <h2 id="who">1. Who we are</h2>
   <p>MummaNest ("MummaNest", "we", "us") is a mobile app that offers gentle guidance, an AI companion, trackers, a private diary and a community for women who are trying to conceive, pregnant, or caring for a newborn. The app is built and operated from India by the MummaNest team. For the purposes of India's Digital Personal Data Protection Act, 2023 we are the data fiduciary for the information described here. You can reach us using the details in <a href="#contact">Contact</a>.</p>
-  <p>This policy covers the MummaNest app and the services behind it. It does not cover third-party websites or services that the app may link to.</p>
+  <p>This policy covers the MummaNest app and the services behind it. It does not cover third-party websites or services that the app may link to. Your use of the app is also governed by our <a href="terms.html">Terms of Use</a>, which include our community rules.</p>
 
   <h2 id="collect">2. What we collect</h2>
   <p>Almost everything we hold is information you type into the app yourself. We do not read your phone's contacts, photos, location or microphone in this version of the app.</p>
@@ -108,30 +110,70 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
   <p>MummaNest is built around consent for each purpose. During onboarding you choose the essentials; the rest are switched on only when you use the related feature, and every one can be withdrawn in <em>My MummaNest → Privacy &amp; consents</em>.</p>
   <ul>
     <li><strong>Personalise my experience</strong>: use your stage, interests and profile to tailor the Daily Nest, Wisdom recommendations and affirmations.</li>
-    <li><strong>AI assistant</strong>: send your messages to Anna so she can reply.</li>
-    <li><strong>AI memory</strong>: let Anna use what you have shared in the app so her replies fit your situation.</li>
+    <li><strong>AI assistant</strong>: send your messages to Anna, with your stage, pregnancy week, your baby's age range and your app language, to our AI provider OpenAI so Anna can reply. You give this when you tap <em>Agree &amp; continue</em> on the Anna screen. See <a href="#anna">section 4</a>.</li>
+    <li><strong>AI memory</strong>: reserved for a future feature that would let Anna remember past conversations. It has no effect today and does not change what is sent to OpenAI.</li>
     <li><strong>Wellness tracking</strong>: keep your wellbeing entries.</li>
-    <li><strong>Diary AI assist</strong> and <strong>diary safety check</strong>: optional, and off unless you turn them on.</li>
-    <li><strong>Community participation</strong>: post and reply in The Village.</li>
-    <li><strong>Matching</strong>: suggest other moms to you and you to them, using stage, interests, age range and the coarse distance band you allow.</li>
-    <li><strong>Messaging</strong>: exchange private messages with moms you have connected with.</li>
+    <li><strong>Diary AI assist</strong> and <strong>diary safety check</strong>: reserved for future features. They have no effect today, and nothing from your diary is sent to an AI provider.</li>
+    <li><strong>Community participation</strong>: post and reply in The Village. The text of your posts and replies is checked for safety by OpenAI before it is published. See <a href="#safety-screening">Safety screening</a>.</li>
+    <li><strong>Matching</strong>: suggest other moms to you and you to them, using stage, interests, age range and the coarse distance band you allow. Any note you add to a connection request is checked for safety by OpenAI before it is sent.</li>
+    <li><strong>Messaging</strong>: exchange private messages with moms you have connected with. The text of your messages is checked for safety by OpenAI before it is delivered.</li>
     <li><strong>Doctor sharing</strong>: keep your care contacts.</li>
     <li><strong>Child data</strong>: store your baby's details and trackers.</li>
     <li><strong>Marketing or engagement</strong>: reminders and product updates. Off by default.</li>
   </ul>
   <p>Independently of these consents, we process the minimum needed to run the service: creating and securing your account, preventing abuse, responding to support requests, and meeting legal obligations.</p>
 
-  <h2 id="anna">4. Anna, the AI companion</h2>
-  <p>Anna's replies are generated by a large language model run by a third-party AI provider, such as OpenAI or Anthropic, through our own backend. When you message Anna we send your message, the recent conversation, and, if you have allowed <em>AI memory</em>, relevant context from your profile, such as your stage, pregnancy week or your baby's age. We do not send your email address, your diary, your private messages or your care contacts to the AI provider.</p>
-  <p>We only use providers whose terms prohibit them from using your content to train their models. Anna is limited to pregnancy, parenting and wellbeing topics, is clearly identified as AI before first use, and will point you to India crisis helplines if a message suggests you are in distress.</p>
-  <p>Your conversations are stored so you can revisit them. You can delete any conversation from <em>Chat history</em>.</p>
+  <h2 id="anna">4. Anna, safety checks and our AI provider</h2>
+  <p>MummaNest uses one third-party AI provider: <strong>OpenAI, L.L.C.</strong>, based in San Francisco, USA. We use OpenAI for two things only: writing Anna's replies, and checking community posts and messages for safety. The app never contacts OpenAI directly. Requests go from our own servers to OpenAI's API, and we send only the information listed below.</p>
+
+  <h3 id="anna-companion">Anna, the AI companion</h3>
+  <p>Anna is clearly identified as AI. Nothing is sent to OpenAI for Anna until you have read the Anna screen that explains this and tapped <em>Agree &amp; continue</em>. That gives your <em>AI assistant</em> consent. You can withdraw it at any time in <em>Privacy &amp; consents</em>, and Anna then stops working until you agree again.</p>
+  <div class="tbl"><table>
+    <tr><th>Topic</th><th>Details</th></tr>
+    <tr><td>What we send</td><td>
+      <ul>
+        <li>Your messages to Anna. Before sending, we automatically remove anything that looks like an email address or phone number.</li>
+        <li>The recent conversation, up to the last 12 turns, so Anna can follow along.</li>
+        <li>Context from your profile: your stage (trying to conceive, pregnant or new mom), your pregnancy week, your baby's age range and your app language. This is sent whenever you use Anna.</li>
+        <li>Anna's reply, sent once more so OpenAI can suggest follow-up questions you can tap.</li>
+      </ul>
+    </td></tr>
+    <tr><td>What we never send</td><td>Your name, email address, birth year, your baby's name, your diary, your private messages with other moms, or your doctor and care contacts, unless you type them into a message to Anna yourself.</td></tr>
+    <tr><td>Who receives it</td><td>OpenAI, L.L.C. (USA), through its API, called from our servers.</td></tr>
+    <tr><td>Why</td><td>Only to write Anna's reply and suggest follow-up questions.</td></tr>
+  </table></div>
+  <p>Anna is limited to pregnancy, parenting and wellbeing topics, and will point you to India crisis helplines if a message suggests you are in distress. Your conversations are stored on our servers so you can revisit them. You can delete any conversation from <em>Chat history</em>.</p>
+
+  <h3 id="safety-screening">Safety screening of community posts and messages</h3>
+  <p>To keep The Village kind and safe, we check what members write before others see it. The app tells you about this check before you post or send, in the composer and when you agree to community participation and messaging.</p>
+  <div class="tbl"><table>
+    <tr><th>Topic</th><th>Details</th></tr>
+    <tr><td>What we send</td><td>Only the text of: Village posts (title and body) and replies, private messages between moms, and notes added to connection requests.</td></tr>
+    <tr><td>What we never send</td><td>Your name, email address, or any other account or profile details. Anything that looks like an email address or phone number is removed from the text first.</td></tr>
+    <tr><td>Who receives it</td><td>OpenAI, L.L.C. (USA), through its API, called from our servers.</td></tr>
+    <tr><td>Why</td><td>To classify the text for safety concerns, such as harassment, hate or self-harm, before it is published or delivered. A post flagged as possibly unsafe is held and not shown to other members.</td></tr>
+  </table></div>
+
+  <h3 id="ai-protection">How OpenAI protects your information</h3>
+  <p>OpenAI gives your information the same level of protection as this policy:</p>
+  <ul>
+    <li><strong>Contract.</strong> OpenAI is bound by its API business terms and data processing terms to use what we send only to provide its service to us, and not for its own purposes.</li>
+    <li><strong>No training.</strong> Under <a href="https://openai.com/enterprise-privacy/">OpenAI's API data policy</a>, data sent through the API is not used to train OpenAI's models.</li>
+    <li><strong>Limited retention.</strong> Under the same policy, OpenAI keeps API inputs and outputs for up to 30 days to monitor for abuse, and then deletes them, unless the law requires it to keep them longer.</li>
+    <li><strong>Encryption.</strong> Everything we send to OpenAI travels over an encrypted TLS connection.</li>
+  </ul>
+  <p>If we ever change AI provider, we will update this policy first, and we will ask you again in the app before any of your information is sent to the new provider.</p>
 
   <h2 id="village">5. Community, matching and messaging</h2>
   <ul>
     <li><strong>What others see.</strong> Your first name, an age range, your stage and your interests may be shown to other moms in Find moms. Your email, birth year, exact location, pregnancy details, baby details, diary and Anna conversations are never shown to other users.</li>
-    <li><strong>Anonymous posting.</strong> You can post in The Village anonymously; your name is then not shown to other members.</li>
-    <li><strong>Moderation.</strong> Posts and replies are reviewed before they appear, using automated checks and human review, to keep the community safe.</li>
-    <li><strong>Blocking and reporting.</strong> You can block any member, which also ends any connection, and report messages. Our team reviews reports and may act on the account concerned.</li>
+    <li><strong>Anonymous posting.</strong> You can post in The Village anonymously; your name is then not shown to other members. Our moderation team can still see who wrote a post if it is reported.</li>
+    <li><strong>Zero tolerance.</strong> Our <a href="terms.html">Terms of Use</a>, which you agree to before signing in, allow no objectionable content and no abusive members.</li>
+    <li><strong>Content filtering.</strong> The text of posts, replies, private messages and connection notes is automatically checked for safety before it is published or delivered, as described in <a href="#safety-screening">Safety screening</a>. Posts flagged as possibly unsafe are held and not shown to others.</li>
+    <li><strong>Reporting.</strong> You can report any Village thread, reply or private message as harassment, spam, inappropriate or other. When something is reported, our moderation team can see the reported content and who wrote it.</li>
+    <li><strong>Blocking.</strong> You can block a member from a Village thread or reply, a private conversation, or your connections list. Their posts, replies and conversation are hidden from you immediately, any connection between you ends, and our moderation team is notified to review it. The member you block is not told.</li>
+    <li><strong>What our team does.</strong> We review every report and block within 24 hours. We remove objectionable content, and we may ban the member responsible. A banned member can no longer post, reply, message or connect, and their community content is removed.</li>
+    <li><strong>Moderator access.</strong> Alerts sent to our team contain no user content, only the type of report and a case number. Reported content is reviewed inside the app, only by accounts with a moderator role.</li>
     <li><strong>Discoverability.</strong> You can switch off being suggested to other moms, and switch off sharing a coarse distance band, in <em>Matching preferences</em>.</li>
   </ul>
 
@@ -140,14 +182,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
   <ul>
     <li><strong>Firebase Authentication (Google LLC)</strong>: verifies your Google or Apple sign-in.</li>
     <li><strong>Apple</strong>: if you use Sign in with Apple.</li>
-    <li><strong>Our AI provider</strong> (see section 4): generates Anna's replies.</li>
+    <li><strong>OpenAI, L.L.C. (USA)</strong>: generates Anna's replies and screens community posts and messages for safety. Exactly what is sent, and how it is protected, is set out in <a href="#anna">section 4</a>.</li>
     <li><strong>Cloudflare</strong>: secures the connection between the app and our servers.</li>
     <li><strong>Our hosting provider in India</strong>: runs the servers and database.</li>
   </ul>
-  <p>We may also disclose information when the law requires it, to protect someone's safety, or to enforce our terms. If MummaNest is ever transferred to another organisation, your data would move with it under this policy and we would tell you first.</p>
+  <p>We may also disclose information when the law requires it, to protect someone's safety, or to enforce our <a href="terms.html">Terms of Use</a>. If MummaNest is ever transferred to another organisation, your data would move with it under this policy and we would tell you first.</p>
 
   <h2 id="where">7. Where your data lives</h2>
-  <p>Your account data is stored on servers located in India. Requests to our AI provider and sign-in provider may be processed on their servers outside India, including in the United States. We rely on those providers' contractual commitments to protect your information when this happens.</p>
+  <p>Your account data is stored on servers located in India. The text we send to OpenAI for Anna and for safety screening (see <a href="#anna">section 4</a>) is processed by OpenAI, including in the United States. Requests to our sign-in provider may also be processed on servers outside India, including in the United States. We rely on those providers' contractual commitments to protect your information when this happens.</p>
 
   <h2 id="security">8. Security</h2>
   <ul>
@@ -189,7 +231,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--border);col
   <h2 id="contact">14. Contact</h2>
   <p>Questions, requests or complaints about privacy: <a href="mailto:saranmonalisha@gmail.com">saranmonalisha@gmail.com</a>, or open a ticket in the app under <em>Help &amp; support</em>. You can also read about the app at <a href="https://chotigold.in/mummanest">chotigold.in/mummanest</a>.</p>
 
-  <footer>This page is hosted on GitHub Pages, which may record standard server logs such as your IP address under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. The MummaNest app itself does not use cookies.</footer>
+  <footer><p>Read our <a href="terms.html">Terms of Use</a>.</p>This page is hosted on GitHub Pages, which may record standard server logs such as your IP address under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. The MummaNest app itself does not use cookies.</footer>
 </div>
 </body>
 </html>
